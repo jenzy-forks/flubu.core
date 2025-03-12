@@ -106,7 +106,7 @@ public class  BuildScript : DefaultBuildScript
             .SetAsDefault()
             .DependsOn(compile, flubuTests);
 
-        var branch = context.BuildSystems().AppVeyor().BranchName;
+        var branch = context.BuildServers().AppVeyor().BranchName;
         
         context.CreateTarget("rebuild.server")
             .SetDescription("Rebuilds the solution and publishes nuget packages.")
@@ -118,7 +118,7 @@ public class  BuildScript : DefaultBuildScript
             .DependsOn(packageDotnetFlubu)
             .DependsOn(packageWebApi)
             .DependsOn(nugetPublish).When((c) =>
-                c.BuildSystems().RunningOn == BuildSystemType.AppVeyor && branch != null && branch.Contains("stable", StringComparison.OrdinalIgnoreCase));
+                c.BuildServers().RunningOn == BuildServerType.AppVeyor && branch != null && branch.Contains("stable", StringComparison.OrdinalIgnoreCase));
             ////.DependsOn(packageWebApiWin);
 
         var compileLinux = context

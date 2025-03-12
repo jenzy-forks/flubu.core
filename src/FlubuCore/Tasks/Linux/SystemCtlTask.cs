@@ -33,7 +33,7 @@ namespace FlubuCore.Tasks.Linux
 
             if (DoNotFail)
                 task.DoNotFailOnError();
-            
+
             if (!string.IsNullOrEmpty(_host))
                 task.WithArguments("-H", _host);
 
