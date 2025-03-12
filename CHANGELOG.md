@@ -1,3 +1,9 @@
+## FlubuCore 9.0.0.0
+## FlubuCore 8.0.0.0
+
+## FlubuCore 7.0.1.0
+- added support for IIS remote server management
+
 ## FlubuCore 7.0.0.0
 - Added support for .net 7.0.
 - Updated nuget packages.

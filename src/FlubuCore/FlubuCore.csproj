@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
     <WarningsAsErrors>true</WarningsAsErrors>
     <AssemblyName>FlubuCore</AssemblyName>
     <PackageId>FlubuCore</PackageId>
     <PackageTags>dotnet;flubu;flubucore;build;builder;script;buildscript;automation;VisualStudio</PackageTags>
-    <Authors>Marko Zorec;Zoro Zorec;Micheal Tsai</Authors>
+    <Authors>Marko Zorec;Zoro Zorec;</Authors>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/dotnetcore/FlubuCore</PackageProjectUrl>
     <PackageReleaseNotes>https://github.com/dotnetcore/FlubuCore/blob/master/CHANGELOG.md</PackageReleaseNotes>
@@ -19,9 +19,9 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>5.1.8</Version>
-    <AssemblyVersion>5.1.8.0</AssemblyVersion>
-    <FileVersion>5.1.8.0</FileVersion>
+    <Version>9.0.0</Version>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <FileVersion>9.0.0.0</FileVersion>
     <CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
     <NoWarn>1701;1702;1705;1591;1573;1572;1574</NoWarn>
   </PropertyGroup>
