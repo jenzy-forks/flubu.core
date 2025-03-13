@@ -24,12 +24,6 @@ namespace FlubuCore.Context
         /// <returns></returns>
         ITarget CreateTarget(string name);
 
-        /// <summary>
-        /// Interaction with various build servers(continous integration / continous delivery servers).
-        /// </summary>
-        /// <returns></returns>
-        IBuildServer BuildServers();
-
         void LogInfo(string message);
 
         void LogInfo(string message, Color foregroundColor);
