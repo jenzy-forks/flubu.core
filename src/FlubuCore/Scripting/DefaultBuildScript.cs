@@ -141,6 +141,7 @@ namespace FlubuCore.Scripting
             ConfigureDefaultProps(flubuSession);
             BeforeBuildExecution(flubuSession);
 
+
             _scriptProperties.InjectProperties(this, flubuSession);
 
             ConfigureBuildProperties(flubuSession);
