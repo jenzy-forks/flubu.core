@@ -140,12 +140,10 @@ namespace FlubuCore.Scripting
             flubuSession.TargetTree.ResetTargetTree();
             ConfigureDefaultProps(flubuSession);
             BeforeBuildExecution(flubuSession);
-
-
-            _scriptProperties.InjectProperties(this, flubuSession);
-
             ConfigureBuildProperties(flubuSession);
             ConfigureDefaultTargets(flubuSession);
+
+            _scriptProperties.InjectProperties(this, flubuSession);
 
             _targetCreator.CreateTargetFromMethodAttributes(this, flubuSession);
             OnBuildInitialized(flubuSession);
